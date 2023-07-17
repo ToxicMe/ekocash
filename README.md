@@ -1,5 +1,3 @@
-# Ekocash
-
 # Ekocash Shop Management System
 
 The Ekocash Shop Management System is a simple application designed to manage products, sales, and user accounts for a retail shop. The system has two main roles: **Admin** and **User**, each with specific functionalities.
