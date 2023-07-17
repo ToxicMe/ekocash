@@ -1,0 +1,148 @@
+{% extends 'admin/base.html' %}
+{% block content %}
+            <main class="">
+                <div class="grid mb-4 pb-10 px-8 mx-4 rounded-3xl bg-gray-100 border-4 border-green-400">
+
+                    <div class="grid grid-cols-12 gap-6">
+                        <div class="grid grid-cols-12 col-span-12 gap-6 xxl:col-span-9">
+                            <div class="col-span-12 mt-8">                            
+                         </div>
+                                                
+                            <div class="col-span-12 mt-5">
+
+                                
+                                <div class="grid gap-2 grid-cols-1 lg:grid-cols-1">
+                                    <div class="bg-white p-4 shadow-lg rounded-lg">
+                                        
+
+                                        <!-- component -->
+                                            <div class="relative mr-6 my-2 flex justify-end">
+                                                <input type="search" class="bg-purple-white shadow rounded border-0 p-3" placeholder="search">
+                                                <div class="absolute pin-r pin-t mt-3 mr-4 text-purple-lighter">
+                                                    <svg version="1.1" class="h-4 text-dark" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                                                viewBox="0 0 52.966 52.966" style="enable-background:new 0 0 52.966 52.966;" xml:space="preserve">
+                                                    <path d="M51.704,51.273L36.845,35.82c3.79-3.801,6.138-9.041,6.138-14.82c0-11.58-9.42-21-21-21s-21,9.42-21,21s9.42,21,21,21
+                                                    c5.083,0,9.748-1.817,13.384-4.832l14.895,15.491c0.196,0.205,0.458,0.307,0.721,0.307c0.25,0,0.499-0.093,0.693-0.279
+                                                    C52.074,52.304,52.086,51.671,51.704,51.273z M21.983,40c-10.477,0-19-8.523-19-19s8.523-19,19-19s19,8.523,19,19
+                                                    S32.459,40,21.983,40z"/>
+                                            
+                                                </svg>
+                                            
+                                                </div>
+                                            </div>
+                                            <h1 class="font-bold text-base">ACCOUNTS</h1>
+
+                                         <div class="mt-4">
+                                            <div class="flex flex-col">
+                                                <div class="-my-2 overflow-x-auto">
+                                                    <div class="py-2 align-middle inline-block min-w-full">
+                                                        <div
+                                                            class="shadow overflow-hidden border-b border-gray-200 sm:rounded-lg bg-white">
+                                                            <table class="min-w-full divide-y divide-gray-200">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th
+                                                                        class="px-6 py-3 bg-gray-50 text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                                                        <div class="flex cursor-pointer">
+                                                                            <span class="mr-2">ACC NAME</span>
+                                                                        </div>
+                                                                        </th>
+                                                                        <th
+                                                                            class="px-6 py-3 bg-gray-50 text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                                                            <div class="flex cursor-pointer">
+                                                                                <span class="mr-2">USER TYPE</span>
+                                                                            </div>
+                                                                        </th>
+                                                                        
+                                                                        <th
+                                                                            class="px-6 py-3 bg-gray-50 text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                                                            <div class="flex cursor-pointer">
+                                                                                <span class="mr-2">CREATION DATE</span>
+                                                                            </div>
+                                                                        </th>
+                                                                        <th
+                                                                        class="px-6 py-3 bg-gray-50 text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                                                        <div class="flex cursor-pointer">
+                                                                            <span class="mr-2">LAST LOGIN</span>
+                                                                        </div>
+                                                                    </th>
+                                                                        <th
+                                                                            class="px-6 py-3 bg-gray-50 text-xs leading-4 font-medium text-gray-500 uppercase tracking-wider">
+                                                                            <div class="flex cursor-pointer">
+                                                                                <span class="mr-2">ACTION</span>
+                                                                            </div>
+                                                                        </th>
+                                                                    </tr>
+                                                                </thead>
+                                                                
+
+                                                                <tbody class="bg-white divide-y divide-gray-200">
+                                                                    <tr>
+                                                                        <td
+                                                                            class="px-6 py-4 whitespace-no-wrap text-sm leading-5">
+                                                                            <p>{{ account_name }}</p>
+                                                                            <p class="text-xs text-gray-400">                                                                        </p>
+                                                                        </td>
+                                                                        <td
+                                                                            class="px-6 py-4 whitespace-no-wrap text-sm leading-5">
+                                                                            <p>{{ user_type }}</p>
+                                                                        </td>
+                                                                        <td
+                                                                            class="px-6 py-4 whitespace-no-wrap text-sm leading-5">
+                                                                            
+                                                                                <p> {{ creation_date }}</p>
+                                                                        
+                                                                        </td>
+                                                                        <td
+                                                                        class="px-6 py-4 whitespace-no-wrap text-sm leading-5">
+                                                                        
+                                                                            <p>{{ last_login }}</p>
+                                                                        
+                                                                    </td>
+                                                                    
+                                                                
+                                                                        <td
+                                                                            class="px-6 py-4 whitespace-no-wrap text-sm leading-5">
+                                                                            <div class="flex space-x-4">
+                                                                                <a href="#" class="text-blue-500 hover:text-blue-600">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                    class="w-5 h-5 mr-1"
+                                                                                    fill="none" viewBox="0 0 24 24"
+                                                                                    stroke="currentColor">
+                                                                                    <path stroke-linecap="round"
+                                                                                        stroke-linejoin="round"
+                                                                                        stroke-width="2"
+                                                                                        d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z" />
+                                                                                </svg>
+                                                                                <p>Edit</p>
+                                                                                </a>
+                                                                                <a href="#" class="text-red-500 hover:text-red-600">
+                                                                                <svg xmlns="http://www.w3.org/2000/svg"
+                                                                                    class="w-5 h-5 mr-1 ml-3"
+                                                                                    fill="none" viewBox="0 0 24 24"
+                                                                                    stroke="currentColor">
+                                                                                    <path stroke-linecap="round"
+                                                                                        stroke-linejoin="round"
+                                                                                        stroke-width="2"
+                                                                                        d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16" />
+                                                                                </svg>
+                                                                                <p>Delete</p>
+                                                                                </a>
+                                                                            </div>
+                                                                        </td>
+                                                                    </tr>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </main>
+       {% endblock %}
