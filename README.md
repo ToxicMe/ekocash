@@ -32,11 +32,16 @@ To run the Ekocash Shop Management System, ensure you have the following:
 
 ## Installation and Setup:
 
-1. Clone or download the Ekocash Shop Management System repository from [link].
-2. Install the required dependencies using `pip install -r requirements.txt`.
-3. Run migrations to create the required database tables: `python manage.py migrate`.
-4. Create a superuser to access the admin panel: `python manage.py createsuperuser`.
-5. Run the development server: `python manage.py runserver`.
+1. Clone or download the Ekocash Shop Management System repository from (https://github.com/ToxicMe/ekocash.git).
+   `git clone https://github.com/ToxicMe/ekocash.git`
+2. Install the required dependencies using:
+   `pip install -r requirements.txt`
+3. Run migrations to create the required database tables:
+   `python manage.py migrate`
+4. Create a superuser to access the admin panel:
+   `python manage.py createsuperuser`
+.  Run the development server:
+   `python manage.py runserver`
 
 To run the Ekocash Shop Management System using a batch file, follow these steps:
 
@@ -77,4 +82,4 @@ Please remember to replace the placeholders `PATH_TO_YOUR_VIRTUAL_ENV` and `PATH
 
 ## Note:
 
-This [Readme.md](http://readme.md/) file is a basic guide to get you started with the Ekocash Shop Management System. For more detailed instructions or additional features, contact the project maintainers. Happy managing!
+This Readme.md file is a basic guide to get you started with the Ekocash Shop Management System. For more detailed instructions or additional features, contact the project maintainer. Happy managing!
