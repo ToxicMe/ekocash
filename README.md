@@ -40,7 +40,7 @@ To run the Ekocash Shop Management System, ensure you have the following:
    `python manage.py migrate`
 4. Create a superuser to access the admin panel:
    `python manage.py createsuperuser`
-.  Run the development server:
+5. Run the development server:
    `python manage.py runserver`
 
 To run the Ekocash Shop Management System using a batch file, follow these steps:
